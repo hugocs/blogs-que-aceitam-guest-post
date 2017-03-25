@@ -6,7 +6,12 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
-    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules",
+    "deploy": "gh-pages-deploy",
+    "unignore": "replace dist/ '' .gitignore"
+  },
+  "gh-pages-deploy": {
+    "prep": ["unignore", "build"]
   },
   "dependencies": {
     "vue": "^2.2.1"
@@ -20,6 +25,7 @@
     "file-loader": "^0.9.0",
     "json-loader": "^0.5.4",
     "node-sass": "^4.5.1",
+    "replace": "^0.3.0",
     "sass-loader": "^6.0.3",
     "vue-loader": "^11.1.4",
     "vue-template-compiler": "^2.2.1",
