@@ -1,11 +1,18 @@
 <template>
 
   <div> 
+    <jumbotron></jumbotron>
+    
+    <div class="u-clearfix">
+      <div class="col--tablet-8 p-padding--2" v-for="blog in blogs">
+        <blog-box :blog="blog"></blog-box>      
+      </div>      
+    </div>
 
-  <jumbotron></jumbotron>
-  <page-footer></page-footer>
-
+    <page-footer></page-footer>
   </div>
+
+
 
 </template>
 
@@ -13,18 +20,24 @@
   
   import Jumbotron from "./components/shared/jumbotron/Jumbotron.vue";
   import Footer from "./components/shared/footer/Footer.vue";
+  import BlogBox from "./components/shared/blog-box/BlogBox.vue";
+  import Blogs from "./data/data.json";
 
   export default {
 
     components: {
       'jumbotron': Jumbotron,
-      'page-footer': Footer
+      'page-footer': Footer,
+      'blog-box': BlogBox
     },
   
     data () {
       var data = {
-        message: "Teste"
-      };
+        blogs: Blogs.feed.entry
+      };          
+
+      console.log(data.blogs[0]);
+
       return data;
     }
   }
