@@ -3,10 +3,15 @@
   <div> 
     <jumbotron></jumbotron>
     
-    <div class="u-clearfix">
-      <div class="col--tablet-8 p-padding--2" v-for="blog in blogs">
-        <blog-box :blog="blog"></blog-box>      
-      </div>      
+    <div class="u-clearfix blog-list__flex-grid" style="display: flex; flex-wrap: wrap; background-color: #e8e8e8;">      
+      
+      <blog-box       
+        :blog="blog" 
+        v-for="(blog, index) in blogs"
+        v-bind:data="blog"
+        v-bind:key="blog.id"
+        class="blog-box--medium-size"
+        ></blog-box>      
     </div>
 
     <page-footer></page-footer>

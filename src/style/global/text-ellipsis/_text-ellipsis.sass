@@ -1,0 +1,9 @@
+=m-text-ellipsis($value: "", $property: "max-width")
+		display: block
+		text-overflow: ellipsis
+		overflow: hidden
+		white-space: nowrap
+		word-wrap: normal
+
+		@if $value
+			#{$property}: #{$value}

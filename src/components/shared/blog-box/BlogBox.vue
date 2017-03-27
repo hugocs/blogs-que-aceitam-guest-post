@@ -32,62 +32,50 @@
 @import "../../../style/global/global"
 
 .blog-box
-    box-shadow: 0 2px 1px rgba(170, 170, 170, .25)
+    box-sizing: border-box
     background-color: #fff
-    border-radius: 8px
-    cursor: pointer
-    position: relative
-
-    &:hover
-        transform: scale(1.025)
+    margin: spacing(1)
+    border-radius: 4px
+    display: flex
+    flex-direction: column
+    
+    +modifier("medium-size")
+        width: calc(100% - 20px)
+        
+        +from-breakpoint("tablet")
+            width: calc(50% - 20px)
+        
+        +from-breakpoint("desktop")
+            width: calc(25% - 20px)
 
     +element("title")
-        font-size: 16px
-        display: none
-
+        font-size: 16px        
+        margin-bottom: 10px
+        color: #222
+        +m-text-ellipsis
+        
     +element("body")
-        padding: spacing(2) spacing(2) 0 spacing(2)
-        flex: 1 0 auto
+        padding: spacing(2)
+        flex-grow: 1
+        margin: spacing(1) 0
+        font-family: "Open Sans", sans-serif
+        font-size: 14px
+        color: #333
+        max-height: 130px
+        overflow: hidden
 
     +element("link")
-        color: inherit
-        display: inline-block
-        max-width: calc(100% - 20px)
-        overflow: hidden
-        text-decoration: none
-        text-overflow: ellipsis
-        vertical-align: middle
-        white-space: nowrap
-        word-wrap: normal
-        padding: spacing(2) 0 spacing(2) spacing(2)
-        border: 0
-
         &:hover
             color: #247ba0
 
     +element("description")
-        font-size: 13px
-        color: #666
 
     +element("footer")
-        padding: 0
-        border-top: 1px solid #eee
-        color: #666
-        font-size: 12px
-        min-height: 45px
+        border-top: 1px solid #d8d8d8
+        padding: spacing(2)
 
     +element("icon-like")
-        float: right
-        cursor: pointer
-        transition: all ease-in .5s
-        color: #999
-        vertical-align: middle
-        padding: spacing(2)
-        position: relative
-        top: 3px // ajuste arbitrário :(
 
         &:hover
-            color: #ff1654
-            animation: pulse .5s infinite alternate ease-in	
 
 </style>
