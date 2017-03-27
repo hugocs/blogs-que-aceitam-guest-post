@@ -38,10 +38,8 @@
   
     data () {
       var data = {
-        blogs: Blogs.feed.entry
+        blogs: Blogs
       };          
-
-      console.log(data.blogs[0]);
 
       return data;
     }

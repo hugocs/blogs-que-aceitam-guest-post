@@ -1,16 +1,16 @@
 <template>
 	<div class='blog-box'>
 	    <div class="blog-box__body">
-	        <h3 class='blog-box__title'>{{ blog.gsx$urldoblog.$t }}</h3>
-	        <p class='blog-box__description' v-if="blog['gsx$faleumpoucosobreoseublog.']">
-	        	{{ blog['gsx$faleumpoucosobreoseublog.'].$t }}
+	        <h3 class='blog-box__title'>{{ blog.url }}</h3>
+	        <p class='blog-box__description' v-if="blog.descricao">
+	        	{{ blog.descricao }}
 	        </p>
 	    </div>
 	    <footer class='blog-box__footer'>
 	        
-	        <a  :href='blog.gsx$urldoblog.$t'
+	        <a  :href='blog.url'
 	            class='blog-box__link'
-	            target="_blank">{{blog.gsx$urldoblog.$t}}</a>
+	            target="_blank">{{blog.url}}</a>
 
 	        <span class="p-float-right">
 	            <i class='blog-box__icon-like fa fa-heart' title='Curtir esse blog'></i>
@@ -73,6 +73,7 @@
     +element("footer")
         border-top: 1px solid #d8d8d8
         padding: spacing(2)
+        +m-text-ellipsis
 
     +element("icon-like")
 
