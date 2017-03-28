@@ -38,7 +38,7 @@
   
     data () {
       var data = {
-        blogs: Blogs
+        blogs: Blogs.blogs
       };          
 
       return data;
