@@ -6,15 +6,10 @@
 	        	{{ blog.descricao }}
 	        </p>
 	    </div>
-	    <footer class='blog-box__footer'>
-	        
+	    <footer class='blog-box__footer'>	        
 	        <a  :href='blog.url'
 	            class='blog-box__link'
 	            target="_blank">{{blog.url}}</a>
-
-	        <span class="p-float-right">
-	            <i class='blog-box__icon-like fa fa-heart' title='Curtir esse blog'></i>
-	        </span>
 	    </footer>
 	</div>
 </template>
@@ -74,9 +69,5 @@
         border-top: 1px solid #d8d8d8
         padding: spacing(2)
         +m-text-ellipsis
-
-    +element("icon-like")
-
-        &:hover
 
 </style>

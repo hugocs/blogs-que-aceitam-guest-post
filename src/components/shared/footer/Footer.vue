@@ -47,7 +47,7 @@
 	        <p class="page-footer__text">
 
 	            <a href="http://iloveblogs.github.io" class="page-footer__link">
-	                <img src="images/ilove-blogs-logo.png" class="page-footer__subfooter__icon">
+	                <img class="page-footer__subfooter__icon">
 	            </a>
 
 	            <a href="https://github.com/iloveblogs/guest-post" class="page-footer__link">
@@ -55,7 +55,7 @@
 	            </a>
 	        </p>
 	        <p class="page-footer__text">
-	            I love blogs - 2016. Alguns direitos reservados.
+	            I love blogs - 2017. Alguns direitos reservados.
 	        </p>
 	    </div>
 	</footer>

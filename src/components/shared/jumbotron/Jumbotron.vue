@@ -19,9 +19,7 @@
 	export default {
 
 		data(){
-			var data = {
-				teste: "Testando o jumbotron"
-			};
+			var data = {};
 			return data;
 		}
 	}
