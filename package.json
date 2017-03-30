@@ -11,10 +11,15 @@
     "unignore": "replace dist/ '' .gitignore"
   },
   "gh-pages-deploy": {
-    "prep": ["unignore", "build"]
+    "prep": [
+      "unignore",
+      "build"
+    ]
   },
   "dependencies": {
-    "vue": "^2.2.1"
+    "firebase": "^3.7.4",
+    "vue": "^2.2.1",
+    "vuefire": "^1.4.0"
   },
   "devDependencies": {
     "babel-core": "^6.0.0",
