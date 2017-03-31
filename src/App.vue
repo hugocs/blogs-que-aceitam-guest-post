@@ -5,12 +5,15 @@
     
     <div class="u-clearfix blog-list__flex-grid" style="display: flex; flex-wrap: wrap; background-color: #e8e8e8;">      
       
+      <div v-if="blogs.length < 1"> Carregando blogs </div>
+
       <blog-box       
         :blog="blog" 
         v-for="(blog, index) in blogs"
         v-bind:data="blog"
         v-bind:key="blog.id"
         class="blog-box--medium-size"
+        v-else
         ></blog-box>      
     </div>
 
