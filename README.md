@@ -20,11 +20,11 @@ npm run build
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-## Roadmap, próximos passos:
+## Roadmap, próximos passos: 
 
 1. Listar os itens que vem do Firebase em ordem decrescente [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new) 
 2. Fazer paginação dos itens que vem do Firebase [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new)
-3. Passar os templates atuais para jade [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new)
+3. Passar os templates atuais para pug [#1](https://github.com/teles/blogs-que-aceitam-guest-post/issues/1) :white_check_mark:
 4. Criar um componente de mensagem de carregamento [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new)
 5. Estilizar o formulário de forma adequada para ficar bonitinho [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new)
 6. Criar uma folha de ícones svg e utiliza-la na estrutura do vuejs com técnica svg symbol [criar issue](https://github.com/teles/blogs-que-aceitam-guest-post/issues/new)
