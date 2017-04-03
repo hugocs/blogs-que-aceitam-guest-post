@@ -1,17 +1,15 @@
-<template>
-	<div class="jumbotron">
-	    <div class="jumbotron__content">
-	        <h1 class="jumbotron__title">Blogs que aceitam guest post</h1>
-	        <h2 class="jumbotron__subtitle">
-	            Queremos ser a maior lista brasileira de blogs que aceitam guest post.
-	        </h2>
-	        <a href="/sobre" class="jumbotron__main-link">Conheça nossa proposta.</a>
-	        <span class="input-box input-box--is-extra-large">
-	            <input type="text" placeholder="Encontre um blog" class="input-box__input">
-	            <i class="fa fa-search input-box__icon"></i>
-	        </span>
-	    </div>
-	</div>
+<template lang="pug">
+  
+  .jumbotron
+    .jumbotron__content
+      h1.jumbotron__title Blogs que aceitam guest post
+      h2.jumbotron__subtitle
+        | Queremos ser a maior lista brasileira de blogs que aceitam guest post.
+      a.jumbotron__main-link(href='/sobre') Conheça nossa proposta.
+      span.input-box.input-box--is-extra-large
+        input.input-box__input(type='text', placeholder='Encontre um blog')
+        i.fa.fa-search.input-box__icon
+
 </template>
 
 <script>

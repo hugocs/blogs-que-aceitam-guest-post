@@ -1,65 +1,42 @@
-<template>
+<template lang="pug">
 
-	<footer class="page-footer">
-	    <div class="page-footer__content">
-	        <div class="col--tablet-10 p-padding--2">
-	            <p class="page-footer__title">Blogs que aceitam guest post</p>
-	            <p class="page-footer__text">
-	                Cansado de escrever posts sozinhos para o seu blog? Não aguenta mais não ter contato com outros blogueiros da internet? Morrendo de curiosidade para saber quais outros blogs aceitariam um post seu? Quer que outras pessoas escrevam para seu blog?
-	            </p>
-	            <p class="page-footer__text">
-	                Seus problemas acabaram!
-	            </p>
-	        </div>
-	        <div class="col--tablet-6 p-padding--2">
-	            <p class="page-footer__title">Principais links</p>
-	            <ul class="page-footer__list">
-	                <li class="page-footer__list__item">
-	                    <a href="" class="page-footer__link">Adicionar blog</a>
-	                </li>
-	                <li class="page-footer__list__item">
-	                    <a href="https://github.com/iloveblogs/guest-post" class="page-footer__link">Fork no github</a>
-	                </li>
-	                <li class="page-footer__list__item">
-	                    <a href="" class="page-footer__link">Contato</a>
-	                </li>
-	                <li class="page-footer__list__item">
-	                    <a href="https://github.com/iloveblogs/guest-post/issues" class="page-footer__link">Reportar bug</a>
-	                </li>
-	                <li class="page-footer__list__item">
-	                    <a href="" class="page-footer__link">Nossa proposta</a>
-	                </li>
-	                <li class="page-footer__list__item">
-	                    <a href="" class="page-footer__link">Próximas novidades</a>
-	                </li>
-	            </ul>
-	        </div>
-	        <div class="col--tablet-8 p-padding--2">
-	            <p class="page-footer__title">Assine a newsletter</p>
-	            <p class="page-footer__text">Deixe o email e não perca novidades na lista de blogs.</p>
-	            <span class="input-box input-box--is-default p-width-100 p-padding-left-0">
-	                <input type="text" placeholder="Adicione seu email" class="input-box__input">
-	                <i class="fa fa-envelope-o input-box__icon"></i>
-	            </span>
-	        </div>
-	    </div>
-	    <div class="page-footer__subfooter">
-	        <p class="page-footer__text">
-
-	            <a href="http://iloveblogs.github.io" class="page-footer__link">
-	                <img class="page-footer__subfooter__icon">
-	            </a>
-
-	            <a href="https://github.com/iloveblogs/guest-post" class="page-footer__link">
-	                <i class="fa fa-github-alt page-footer__subfooter__icon"></i>
-	            </a>
-	        </p>
-	        <p class="page-footer__text">
-	            I love blogs - 2017. Alguns direitos reservados.
-	        </p>
-	    </div>
-	</footer>
-
+	footer.page-footer
+	  .page-footer__content
+	    .col--tablet-10.p-padding--2
+	      p.page-footer__title Blogs que aceitam guest post
+	      p.page-footer__text
+	        | Cansado de escrever posts sozinhos para o seu blog? Não aguenta mais não ter contato com outros blogueiros da internet? Morrendo de curiosidade para saber quais outros blogs aceitariam um post seu? Quer que outras pessoas escrevam para seu blog?
+	      p.page-footer__text
+	        | Seus problemas acabaram!
+	    .col--tablet-6.p-padding--2
+	      p.page-footer__title Principais links
+	      ul.page-footer__list
+	        li.page-footer__list__item
+	          a.page-footer__link(href='') Adicionar blog
+	        li.page-footer__list__item
+	          a.page-footer__link(href='https://github.com/iloveblogs/guest-post') Fork no github
+	        li.page-footer__list__item
+	          a.page-footer__link(href='') Contato
+	        li.page-footer__list__item
+	          a.page-footer__link(href='https://github.com/iloveblogs/guest-post/issues') Reportar bug
+	        li.page-footer__list__item
+	          a.page-footer__link(href='') Nossa proposta
+	        li.page-footer__list__item
+	          a.page-footer__link(href='') Próximas novidades
+	    .col--tablet-8.p-padding--2
+	      p.page-footer__title Assine a newsletter
+	      p.page-footer__text Deixe o email e não perca novidades na lista de blogs.
+	      span.input-box.input-box--is-default.p-width-100.p-padding-left-0
+	        input.input-box__input(type='text', placeholder='Adicione seu email')
+	        i.fa.fa-envelope-o.input-box__icon
+	  .page-footer__subfooter
+	    p.page-footer__text
+	      a.page-footer__link(href='http://iloveblogs.github.io')
+	        img.page-footer__subfooter__icon
+	      a.page-footer__link(href='https://github.com/iloveblogs/guest-post')
+	        i.fa.fa-github-alt.page-footer__subfooter__icon
+	    p.page-footer__text
+	      | I love blogs - 2017. Alguns direitos reservados.
 	
 </template>
 

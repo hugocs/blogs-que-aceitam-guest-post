@@ -1,17 +1,13 @@
-<template>
-	<div class='blog-box'>
-	    <div class="blog-box__body">
-	        <h3 class='blog-box__title'>{{ blog.url }}</h3>
-	        <p class='blog-box__description' v-if="blog.descricao">
-	        	{{ blog.descricao }}
-	        </p>
-	    </div>
-	    <footer class='blog-box__footer'>	        
-	        <a  :href='blog.url'
-	            class='blog-box__link'
-	            target="_blank">{{blog.url}}</a>
-	    </footer>
-	</div>
+<template lang="pug">
+    
+    .blog-box
+      .blog-box__body
+        h3.blog-box__title {{ blog.url }}
+        p.blog-box__description(v-if='blog.descricao')
+          | {{ blog.descricao }}
+      footer.blog-box__footer
+        a.blog-box__link(:href='blog.url', target='_blank') {{blog.url}}
+
 </template>
 <script>
 	
